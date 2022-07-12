@@ -1,0 +1,25 @@
+---
+title: "Formatting summary statistics from download"
+author: "Frederick J. Boehm"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+We downloaded the Lambert et al 2013 data from here: https://www.niagads.org/igap-summary-statistics-lambert-et-al-2013
+
+We see that, upon unzipping the .zip file, we have two text files. The first, "IGAP_stage_1.txt", has 8 columns: Chromosome, Position, MarkerName, Effect_allele, Non_Effect_allele, Beta, SE, Pvalue.
+
+In examining the outputs from gemma, we see that there are 11 columns: 
+
+chr, rs, ps, n_mis, n_obs, allele1, allele0, af, beta, se, p_wald.
+
+To format the summary statistics into GEMMA output file format, so that we can input it to DBSLMM, we need to rearrange a few columns. We also need to look at the GEMMA manual to ensure that we know what allele0 and allele1 are. I *think* that allele1 is equivalent to Effect_allele, but I'll doublecheck the manual before proceeding.
+
+
+
+
+
+
+
+
+
