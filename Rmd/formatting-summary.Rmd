@@ -15,6 +15,14 @@ chr, rs, ps, n_mis, n_obs, allele1, allele0, af, beta, se, p_wald.
 
 To format the summary statistics into GEMMA output file format, so that we can input it to DBSLMM, we need to rearrange a few columns. We also need to look at the GEMMA manual to ensure that we know what allele0 and allele1 are. I *think* that allele1 is equivalent to Effect_allele, but I'll doublecheck the GEMMA manual before proceeding.
 
+It's good that I checked the GEMMA manual, as "allele1" is defined to be the minor allele, while "allele0" is the major allele. In the Lambert 2013 data, it seems that one allele is designated the effect allele while a second is the non-effect allele. For some SNPs, the effect allele is the minor allele, while for others it may not be. We need to find a database that has the minor allele frequencies for the SNPs in the Lambert data. 
+
+
+
+```{r}
+
+```
+
 
 
 
